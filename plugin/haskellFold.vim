@@ -42,7 +42,7 @@ fun! HaskellFold( lineNum ) "{{{
     endif
 
     if s:HaskellSnipGlobal( line )
-        return 0
+        return 1
     endif
 
     if line =~ '^\s*$'
