@@ -19,7 +19,7 @@ let g:__HASKELLFOLD_VIM__ = 1
 fun! s:HaskellFoldMaster( line ) "{{{
     return a:line =~# '^data\s'
       \ || a:line =~# '^type\s'
-      \ || a:line =~# '^newdata\s'
+      \ || a:line =~# '^newtype\s'
       \ || a:line =~# '^class\s'
       \ || a:line =~# '^instance\s'
       \ || a:line =~  '^[^:]\+\s*::'
